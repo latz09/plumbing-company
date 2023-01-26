@@ -14,7 +14,7 @@ const WhyUs = ({ data, images }) => {
 				</h1>
 
 				<div className='grid xl:grid-cols-7 gap-8'>
-					<div className='xl:col-span-5 p-8 grid gap-12 '>
+					<div className='xl:col-span-5 p-2 lg:p-8 grid gap-12 '>
 						{data.map((reasons, index) => (
 							<Reasons
 								title={reasons.title}
@@ -41,7 +41,7 @@ function Reasons({ title, description, imageType }) {
 				<ImageToUse image={imageType} />
 			</div>
 			<motion.div
-				className='xl:col-span-11 grid gap-4 tracking-wide w-5/6 '
+				className='xl:col-span-11 grid gap-4 tracking-wide lg:w-5/6 '
 				initial={{ opacity: 0.7, scale: 0.85 }}
 				whileInView={{ opacity: 1, scale: 1 }}
 				transition={{ delay: 0.1, duration: 1.1 }}

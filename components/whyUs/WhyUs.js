@@ -3,13 +3,17 @@ import { AiFillTool } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import ImageCarousel from '../utils/ImageCarousel';
 
+import Image from 'next/image';
+
 const WhyUs = ({ data, images }) => {
-	
+
+
 	return (
 		<div className=' grid gap-8 max-w-7xl mx-auto my-16'>
 			<h1 className='text-center text-6xl tracking-widest font-semibold text-orange uppercase opacity-80 font-seri'>
 				Why the Good Guys
 			</h1>
+		
 			<div className='grid grid-cols-7 gap-8'>
 				<div className='col-span-5 p-8 grid gap-12'>
 					{data.map((reasons, index) => (
@@ -20,8 +24,8 @@ const WhyUs = ({ data, images }) => {
 						/>
 					))}
 				</div>
-				<div className='col-span-2 place-self-center border w-full grid place-items-center'>
-					<ImageCarousel images={images} />
+				<div className='col-span-2 place-self-center  w-full grid place-items-center  '>
+					<ImageCarousel  />
 				</div>
 			</div>
 		</div>
@@ -40,7 +44,7 @@ function Reasons({ title, description, imageType }) {
 				className='col-span-11 grid gap-4 tracking-wide w-5/6 '
 				initial={{ opacity: 0.7, scale: 0.85 }}
 				whileInView={{ opacity: 1, scale: 1 }}
-				transition={{delay: .1, duration: 1.1}}
+				transition={{ delay: 0.1, duration: 1.1 }}
 			>
 				<span className='text-2xl  font-bold text-dark/70'>{title}</span>
 				<span className='text-lg opacity-80  text-justify  '>

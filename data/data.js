@@ -1,10 +1,4 @@
-import { whyUs1 } from '../public/images/why-us-carousel/bathroom-sink-good-guys-plumbing.jpg';
-import { whyUs2 } from '../public/images/why-us-carousel/bathtub-faucet-install.jpg';
-import { whyUs3 } from '../public/images/why-us-carousel/faucet-replacement-good-guys-plumbing.jpg';
-import { whyUs4 } from '../public/images/why-us-carousel/hot-water-heater-and-pipes-good-guys-plumbing.jpg';
-import { whyUs5 } from '../public/images/why-us-carousel/pipes-by-good-guys-plumbing-1.jpg';
-import { whyUs6 } from '../public/images/why-us-carousel/shower-install-good-guys-plumbing.jpg';
-import { whyUs7 } from '../public/images/why-us-carousel/under-tub-plumbing-good-guys.jpg';
+
 
 export const openingCards = [
 	{
@@ -47,25 +41,3 @@ export const reasons = [
 	},
 ];
 
-// export const whyUsCarouselImages = [whyUs1, whyUs2, whyUs3, whyUs4, whyUs5, whyUs6, whyUs7]
-// export const whyUsCarouselImages = [whyUs1, whyUs2, whyUs3, whyUs4, whyUs5, whyUs6, 'test']
-export const whyUsCarouselImages = [
-	{
-		image: whyUs1,
-	},
-	{
-		image: whyUs2,
-	},
-	{
-		image: whyUs3,
-	},
-	{
-		image: whyUs4,
-	},
-	{
-		image: whyUs5,
-	},
-	{
-		image: whyUs6,
-	},
-];

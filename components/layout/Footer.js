@@ -21,9 +21,8 @@ export default Footer;
 const Logo = () => {
 	return (
 		<div className=' grid gap-6 lg:gap-4 place-items-center '>
-			<div className='text-4xl font-semibold space-x-2'>
-				<span className='text-dark/70'>Good Guys</span>
-				<span className='text-orange'>Plumbing</span>
+			<div className='text-4xl lg:text-6xl font-semibold text-orange tracking-wider text-center'>
+				Good Guys <span className='text-dark/70 italic'> Plumbing</span>
 			</div>
 			<Contact />
 		</div>
@@ -32,7 +31,7 @@ const Logo = () => {
 
 const Contact = () => {
 	return (
-		<div className='grid gap-2 lg:gap-2 text-xl'>
+		<div className='grid gap-2 lg:gap-2 text-lg md:text-xl'>
 			<div className='grid place-items-center lg:flex items-center gap-2 lg:gap-4 '>
 				<div>
 					<MdPhoneEnabled />
@@ -45,7 +44,7 @@ const Contact = () => {
 				</div>
 				<span className='flex items-center'>
 					contact-your-plumber
-					<span className='text-orange text-2xl font-bold'>@</span>
+					<span className='text-orange text-xl md:text-2xl font-bold'>@</span>
 					goodguys.plumbing
 				</span>
 			</div>
@@ -56,9 +55,11 @@ const Contact = () => {
 const Navigate = () => {
 	const navs = ['Home', 'About', 'Contact'];
 	return (
-		<div className='grid gap-8'>
-			<span className='font-bold text-2xl text-orange'>Navigate</span>
-			<div className='grid gap-4 text-lg tracking-wide'>
+		<div className='grid gap-4 lg:gap-8'>
+			<span className='font-bold text-xl md:text-2xl text-orange'>
+				Navigate
+			</span>
+			<div className='grid gap-4 text-base md:text-lg md:tracking-wide place-items-end'>
 				{navs.map((nav, index) => (
 					<div key={index}>
 						<span>{nav}</span>
@@ -79,9 +80,11 @@ const Services = () => {
 		'Drain Cleaning',
 	];
 	return (
-		<div className='grid gap-8'>
-			<span className='font-bold text-2xl text-orange'>Services</span>
-			<div className='grid gap-4 text-lg tracking-wide'>
+		<div className='grid gap-4 lg:gap-8'>
+			<span className='font-bold text-xl md:text-2xl text-orange'>
+				Services
+			</span>
+			<div className='grid gap-4 md:text-lg md:tracking-wide'>
 				{services.map((service, index) => (
 					<div key={index}>
 						<span>{service}</span>

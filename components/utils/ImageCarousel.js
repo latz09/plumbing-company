@@ -34,7 +34,7 @@ const ImageCarousel = ({}) => {
 				whileInView={{ opacity: 1 }}
 				transition={{ delay: .3, duration: 1.1 }}
 			>
-				<Image src={images[imageIndex]} alt='' />
+				<Image src={images[imageIndex]} alt='' priority={true}/>
 			</motion.div>
 			<div className=''>
 				<ToggleIndex prevImage={prevImage} nextImage={nextImage} />

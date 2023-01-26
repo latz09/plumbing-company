@@ -4,7 +4,7 @@ const ButtonLink = ({title, color}) => {
 	return (
 		<>
 			<Link href='/'>
-				<div className={` bg-orange px-4 py-3 uppercase hover:scale-110 transition duration-700 font-semibold text-lg lg:text-xl rounded shadow-lg tracking-wider ${color === 'orange' ? 'bg-orange text-light1 hover:bg-orange/70 hover:text-dark' : 'bg-white text-orange'}`}>{title}</div>
+				<div className={` bg-orange px-4 py-3 uppercase hover:scale-110 transition duration-700 font-semibold text-lg lg:text-xl rounded shadow-lg tracking-wider ${color === 'orange' ? 'bg-orange text-light1 hover:bg-orange/70 ' : 'bg-white text-orange'}`}>{title}</div>
 			</Link>
 		</>
 	);

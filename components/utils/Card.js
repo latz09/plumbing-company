@@ -10,9 +10,9 @@ const CardLayout = ({ data }) => {
 				<motion.div
 					key={index}
 					className={`h-full w-full shadow-lg py-8 px-16  text-white rounded-md bg-orange `}
-					// initial={{ opacity: 0, x: 100 }}
-					// whileInView={{ opacity: 1, x: 0 }}
-					// transition={{ duration: 0.7, delay: 0.2 * index }}
+					initial={{ opacity: 0, x: 100 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ duration: 0.7, delay: 0.2 * index }}
 				>
 					<Card
 						imageType={item.imageType}

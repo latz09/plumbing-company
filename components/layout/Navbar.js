@@ -1,9 +1,17 @@
+import { TiThMenu } from 'react-icons/ti';
+
 const Navbar = () => {
 	return (
 		<nav className='  bg-gradient-to-b from-orange via-orange/80 to-orange/60 py-8'>
-			<div className='flex items-center justify-between max-w-7xl mx-auto'>
+			<div className='flex items-center justify-between max-w-7xl lg:mx-auto mx-4'>
 				<Logo />
-				<NavLinks />
+
+				<span className="hidden lg:block">
+					<NavLinks />
+				</span>
+				<span className="lg:hidden hover:scale-110 transition duration-700 cursor-pointer hover:text-orange">
+					<TiThMenu className='text-4xl text-white' />
+				</span>
 			</div>
 		</nav>
 	);

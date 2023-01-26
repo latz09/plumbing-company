@@ -10,7 +10,7 @@ const LandingHero = () => {
 				className='px-8'
 				initial={{ scale: 1.07, opacity: 1 }}
 				animate={{ scale: 1, opacity: 0.5 }}
-				transition={{ duration: 1.9, delay: 0.7 }}
+				transition={{ duration: 1.9, delay: 1.4 }}
 			>
 				<Image src={logo} alt='Good Guys Plumbing' />
 			</motion.div>

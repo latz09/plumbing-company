@@ -8,8 +8,8 @@ const LandingHero = () => {
 		<div className=' max-w-7xl mx-auto grid gap-8 lg:gap-0 lg:grid-cols-3 place-items-center py-8 lg:py-32'>
 			<motion.div
 				className='px-8'
-				initial={{ scale: 1.07, opacity: 1 }}
-				animate={{ scale: 1, opacity: 0.5 }}
+				initial={{ scale: 1, opacity: 1 }}
+				animate={{ scale: .93, opacity: 0.5 }}
 				transition={{ duration: 1.9, delay: 1.4 }}
 			>
 				<Image src={logo} alt='Good Guys Plumbing' />

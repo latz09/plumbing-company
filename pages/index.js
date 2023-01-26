@@ -1,16 +1,20 @@
 import LandingHero from '../components/landing/LandingHero';
 import CardLayout from '../components/utils/Card';
 import { BsHandThumbsUp } from 'react-icons/bs';
-import { openingCards, reasons, whyUsCarouselImages } from '../data/data';
+import { openingCards, reasons, services } from '../data/data';
 import WhyUs from '../components/whyUs/WhyUs';
+import ServicesCard from '../components/cards/ServicesLayout';
+import CallUsToday from '../components/utils/CallUsToday';
 
 export default function Home() {
-	console.log(whyUsCarouselImages)
+
 	return (
-		<div className='grid  gap-16 mb-40'>
+		<div className='grid  gap-16'>
 			<LandingHero />
 			<CardLayout data={openingCards} />
-			<WhyUs data={reasons} images={whyUsCarouselImages}/>
+			<WhyUs data={reasons} />
+			<ServicesCard data={services}/>
+			<CallUsToday />
 		</div>
 	);
 }

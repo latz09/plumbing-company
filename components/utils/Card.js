@@ -9,10 +9,7 @@ const CardLayout = ({ data }) => {
 			{data.map((item, index) => (
 				<motion.div
 					key={index}
-					className={`h-full w-full shadow-lg py-8 px-16  text-white rounded-md bg-orange  ${
-						item.imageType === 'thumbs-up' &&
-						'bg-white border border-orange/20 text-orange '
-					} `}
+					className={`h-full w-full shadow-lg py-8 px-16  text-white rounded-md bg-orange `}
 					initial={{ opacity: 0, x: 100 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.7, delay: 0.2 * index }}
@@ -49,17 +46,12 @@ const ImageToUse = ({ image }) => {
 	return (
 		<>
 			<motion.div
-				className='text-6xl text-white '
+				className='text-6xl  '
 				initial={{ scale: 0.93 }}
 				animate={{ scale: 1 }}
 				transition={{ duration: 1.4, repeat: Infinity, repeatType: 'mirror' }}
 			>
-				{image === 'thumbs-up' && (
-					<span className='text-orange'>
-						{' '}
-						<BsHandThumbsUpFill />
-					</span>
-				)}
+				{image === 'thumbs-up' && <BsHandThumbsUpFill />}
 				{image === 'business' && <MdAddBusiness />}
 				{image === 'smile' && <FaSmileBeam />}
 			</motion.div>

@@ -1,5 +1,3 @@
-
-
 export const openingCards = [
 	{
 		title: 'Competitive, Upfront Pricing',
@@ -41,3 +39,35 @@ export const reasons = [
 	},
 ];
 
+export const services = [
+	{
+		id: 0,
+		title: 'Plumbing Service',
+		imageType: 'plunger',
+	},
+	{
+		id: 1,
+		title: 'Fixture Installation',
+		imageType: 'sink',
+	},
+	{
+		id: 2,
+		title: 'pipe replacement',
+		imageType: 'wrench',
+	},
+	{
+		id: 3,
+		title: 'Construction / Renovation',
+		imageType: 'construction',
+	},
+	{
+		id: 4,
+		title: 'Kitchens and Bathrooms',
+		imageType: 'bathtub',
+	},
+	{
+		id: 5,
+		title: 'Drain Cleaning',
+		imageType: 'water-drop',
+	},
+];

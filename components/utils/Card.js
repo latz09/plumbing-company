@@ -9,7 +9,7 @@ const CardLayout = ({ data }) => {
 			{data.map((item, index) => (
 				<motion.div
 					key={index}
-					className={`h-full w-full shadow-lg py-8 px-16  text-white rounded-md bg-orange `}
+					className={`h-full w-full shadow-lg py-8 px-8 lg:px-16  text-white rounded-md bg-orange `}
 					initial={{ opacity: 0, y: 100 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.7, delay: 0.2 * index }}
@@ -35,8 +35,8 @@ const Card = ({ imageType, title, description }) => {
 			</div>
 
 			<div className='grid gap-4'>
-				<span className='text-2xl font-bold'>{title}</span>
-				<span>{description}</span>
+				<span className='text-2xl text-white font-bold'>{title}</span>
+				<span className="text-lg">{description}</span>
 			</div>
 		</div>
 	);

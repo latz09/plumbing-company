@@ -22,7 +22,7 @@ export default Navbar;
 const Logo = () => {
 	return (
 		<div>
-			<h1 className=' text-3xl font-semibold tracking-widest uppercase text-light1'>
+			<h1 className=' sm:mx-2 text-3xl font-semibold tracking-widest uppercase text-light1'>
 				Good Guys <span className='text-light1 font-thin'> Plumbing</span>
 			</h1>
 		</div>

@@ -18,7 +18,7 @@ const ServicesLayout = ({ data }) => {
 						className=' h-full w-full p-8 shadow-lg shadow-light2/60 bg-light1 rounded'
 						initial={{ opacity: 0, y: 100 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ duration: 0.7, delay: 0.2 * index }}
+						transition={{ duration: 0.64, delay: 0.15 * index }}
 					>
 						<ServiceCard title={service.title} imageToUse={service.imageType} />
 					</motion.div>

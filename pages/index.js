@@ -10,7 +10,7 @@ export default function Home() {
 
 	return (
 		<div className='grid  gap-16'>
-			<LandingHero />
+			<LandingHero  />
 			<CardLayout data={openingCards} />
 			<WhyUs data={reasons} />
 			<ServicesCard data={services}/>
